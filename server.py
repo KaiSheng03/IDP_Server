@@ -54,7 +54,7 @@ yolo_model = YOLO("weights (11).pt")  # Adjust path as needed
 
 # Pytorch ViT model
 vit_model = timm.create_model('vit_base_patch16_224', pretrained=False, num_classes=1)
-vit_model.load_state_dict(torch.load('best_base_model (5).pth', map_location='cpu'))  # or 'cuda' if using GPU
+vit_model.load_state_dict(torch.load('best_tiny_model (5).pth', map_location='cpu'))  # or 'cuda' if using GPU
 vit_model.eval()
 
 # Function to preprocess image for UNET/ResNet
